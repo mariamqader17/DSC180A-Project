@@ -1,2 +1,2 @@
 # DSC180A-Project
-### example repository to start working for the replication project
+### example repository to start working in for the replication project
