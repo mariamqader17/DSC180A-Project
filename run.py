@@ -17,7 +17,7 @@ def main(targets):
         with open('config/test_params.json') as fh:
             feature_cfg = json.load(fh)
 
-        # make the data target
+        # make the feature target
         features, labels = findFeatures(**feature_cfg)
 
     return 
