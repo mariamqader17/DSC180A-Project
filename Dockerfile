@@ -24,8 +24,8 @@ RUN	apt-get install -y traceroute
 RUN pip install --no-cache-dir scipy
 
 # 4) 
-COPY /run_jupyter.sh /
-RUN chmod 755 /run_jupyter.sh
-USER $NB_UID
+#COPY /run_jupyter.sh /
+#RUN chmod 755 /run_jupyter.sh
+#USER $NB_UID
 
-CMD ["/bin/bash"]
+#CMD ["/bin/bash"]
