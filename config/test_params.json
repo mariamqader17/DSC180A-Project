@@ -1,0 +1,4 @@
+{
+    "filepath": 'test/testdata',
+    "data": os.listdir('test/testdata'),
+}
