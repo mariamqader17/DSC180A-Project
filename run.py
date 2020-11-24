@@ -7,23 +7,18 @@ from all import findFeatures
 
 def main(targets):
     '''
-    Runs the main project pipeline logic, given the targets.
-    targets must contain: 'data', 'analysis', 'model'. 
-    
-    `main` runs the targets in order of data=>analysis=>model.
+    this function will run the main VPN_XRAY project with the given targets, for this repo we are just focusing on the test target
     '''
 
     if 'test' in targets:
         with open('config/test_params.json') as fh:
             feature_cfg = json.load(fh)
 
-        # make the feature target
+        # makes the feature target
         features, labels = findFeatures(**feature_cfg)
 
     return 
 
 if __name__ == '__main__':
-    # run via:
-    # python main.py data features model
     targets = sys.argv[1:]
     main(targets)
