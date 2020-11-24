@@ -21,6 +21,11 @@ RUN	apt-get install -y nmap
 RUN	apt-get install -y traceroute
 
 # 3) install packages
-RUN pip install --no-cache-dir
+RUN pip install --no-cache-dir scipy
 
 # 4) 
+COPY /run_jupyter.sh /
+RUN chmod 755 /run_jupyter.sh
+USER $NB_UID
+
+CMD ["/bin/bash"]
