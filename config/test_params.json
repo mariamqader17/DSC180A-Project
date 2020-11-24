@@ -1,4 +1,3 @@
 {
-    "filepath": "test/testdata",
-    "data": os.listdir('test/testdata'),
+    "filepath": "test/testdata"
 }
